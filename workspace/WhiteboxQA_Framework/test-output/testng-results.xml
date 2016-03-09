@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="WhiteboxQA_TestSuite" duration-ms="37277" started-at="2016-03-09T21:09:09Z" finished-at="2016-03-09T21:09:46Z">
+    <groups>
+    </groups>
+    <test name="FuncTest" duration-ms="37277" started-at="2016-03-09T21:09:09Z" finished-at="2016-03-09T21:09:46Z">
+      <class name="com.test.HomePageTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.test.HomePageTest@73035e27]" name="initialize" is-config="true" duration-ms="13621" started-at="2016-03-09T13:09:09Z" finished-at="2016-03-09T13:09:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="clickOnLoginTest()[pri:0, instance:com.test.HomePageTest@73035e27]" name="clickOnLoginTest" duration-ms="3817" started-at="2016-03-09T13:09:22Z" finished-at="2016-03-09T13:09:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnLoginTest -->
+        <test-method status="PASS" signature="countSocialIconsTest()[pri:0, instance:com.test.HomePageTest@73035e27]" name="countSocialIconsTest" duration-ms="70" started-at="2016-03-09T13:09:26Z" finished-at="2016-03-09T13:09:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countSocialIconsTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.test.HomePageTest@73035e27]" name="close" is-config="true" duration-ms="1129" started-at="2016-03-09T13:09:26Z" finished-at="2016-03-09T13:09:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.test.HomePageTest -->
+      <class name="com.test.LoginPageTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.test.LoginPageTest@64c64813]" name="initialize" is-config="true" duration-ms="15296" started-at="2016-03-09T13:09:27Z" finished-at="2016-03-09T13:09:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="invalidLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.test.LoginPageTest@64c64813]" name="invalidLoginTest" duration-ms="1975" started-at="2016-03-09T13:09:43Z" data-provider="userdata" finished-at="2016-03-09T13:09:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pete]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[34rai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="FAIL" signature="invalidLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.test.LoginPageTest@64c64813]" name="invalidLoginTest" duration-ms="595" started-at="2016-03-09T13:09:45Z" data-provider="userdata" finished-at="2016-03-09T13:09:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cla23]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<Something went wrong...Please try again.> but was:<>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<Something went wrong...Please try again.> but was:<>
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+	at com.test.LoginPageTest.invalidLoginTest(LoginPageTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.test.LoginPageTest@64c64813]" name="close" is-config="true" duration-ms="730" started-at="2016-03-09T13:09:45Z" finished-at="2016-03-09T13:09:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.test.LoginPageTest -->
+    </test> <!-- FuncTest -->
+  </suite> <!-- WhiteboxQA_TestSuite -->
+</testng-results>
