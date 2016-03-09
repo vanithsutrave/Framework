@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WhiteboxQA_TestSuite]">
+  <test name="FuncTest(failed)">
+    <classes>
+      <class name="com.test.HomePageTest">
+        <methods>
+          <include name="close"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.test.HomePageTest -->
+      <class name="com.test.LoginPageTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="invalidLoginTest" invocation-numbers="1"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.test.LoginPageTest -->
+    </classes>
+  </test> <!-- FuncTest(failed) -->
+</suite> <!-- Failed suite [WhiteboxQA_TestSuite] -->
